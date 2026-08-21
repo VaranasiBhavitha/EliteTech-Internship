@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFlow - Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                StudyFlow
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="welcome">WELCOME BACK 👋</p>
+
+                <h1>Study smarter.<br>Achieve more.</h1>
+
+                <p>
+                    Organize your studies, track your progress,
+                    and stay focused on your goals.
+                </p>
+
+                <button class="primary-btn" id="startBtn">
+                    Start Studying
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h2>12</h2>
+                <p>Tasks Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>78%</h2>
+                <p>Weekly Progress</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>18h</h2>
+                <p>Study Time</p>
+            </div>
+
+        </section>
+
+
+        <!-- Tasks -->
+        <section class="section" id="tasks">
+
+            <div class="section-heading">
+                <h2>Today's Tasks</h2>
+                <p>Stay consistent with your daily goals.</p>
+            </div>
+
+            <div class="tasks-container">
+
+                <div class="task">
+                    <input type="checkbox" class="task-checkbox">
+                    <span>Complete DSA practice</span>
+                </div>
+
+                <div class="task">
+                    <input type="checkbox" class="task-checkbox">
+                    <span>Study DBMS</span>
+                </div>
+
+                <div class="task">
+                    <input type="checkbox" class="task-checkbox">
+                    <span>Work on internship task</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resources -->
+        <section class="section" id="resources">
+
+            <div class="section-heading">
+                <h2>Study Resources</h2>
+                <p>Choose a topic and keep learning.</p>
+            </div>
+
+            <div class="resources-grid">
+
+                <div class="resource-card">
+                    <span>💻</span>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS and JavaScript</p>
+                </div>
+
+                <div class="resource-card">
+                    <span>🐍</span>
+                    <h3>Python</h3>
+                    <p>Programming and data analysis</p>
+                </div>
+
+                <div class="resource-card">
+                    <span>🧠</span>
+                    <h3>DSA</h3>
+                    <p>Problem solving and algorithms</p>
+                </div>
+
+                <div class="resource-card">
+                    <span>🤖</span>
+                    <h3>Machine Learning</h3>
+                    <p>Learn AI concepts</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="profile">
+        <p>© 2026 StudyFlow | Student Productivity Dashboard</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

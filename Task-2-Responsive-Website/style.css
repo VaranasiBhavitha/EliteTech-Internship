@@ -1,0 +1,306 @@
+/* ------------------------------
+   General Styles
+------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ------------------------------
+   Hero
+------------------------------ */
+
+.hero {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 70px 50px;
+
+    border-radius: 20px;
+    background: white;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.primary-btn {
+    border: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   Statistics
+------------------------------ */
+
+.stats {
+    max-width: 1100px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.stat-card h2 {
+    font-size: 32px;
+}
+
+
+/* ------------------------------
+   Sections
+------------------------------ */
+
+.section {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 25px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+}
+
+
+/* ------------------------------
+   Tasks
+------------------------------ */
+
+.tasks-container {
+    display: grid;
+    gap: 15px;
+}
+
+.task {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ------------------------------
+   Resources
+------------------------------ */
+
+.resources-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.resource-card {
+    background: white;
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.resource-card span {
+    font-size: 30px;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    margin-top: 50px;
+}
+
+
+/* ------------------------------
+   Tablet
+------------------------------ */
+
+@media (max-width: 900px) {
+
+    .hero {
+        margin: 30px 20px;
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ------------------------------
+   Mobile
+------------------------------ */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        margin: 20px;
+        padding: 45px 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        margin: 50px auto;
+    }
+
+}
