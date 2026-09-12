@@ -46,7 +46,7 @@ Payment Successful
 
 ## Figma Prototype
 
-Paste your Figma prototype link here.
+(https://www.figma.com/proto/QftHbHx8jyG77UKul6Jyqg/Mobile-App-Redesign-payment-App?node-id=0-1&t=2p25yWjcv6m8f1N0-1)
 
 ## Tools Used
 - Figma
